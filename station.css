@@ -1,0 +1,101 @@
+.roundbox {
+    position: absolute;
+    z-index: 15;
+    left: 25px;
+    height: 135px;
+    width: 135px;
+    background-color: #FC9;
+    border-radius: 360px;
+    top: -50px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.roundbox img {
+    width: 135px;
+    height: 135px;
+    border-radius: 90px;
+    -webkit-animation: r1 6s linear infinite;
+    animation: r1 6s linear infinite;
+}
+
+@keyframes r1 {
+    0% {
+        transform: rotate(-360deg)
+    }
+    ;
+    10% {
+        transform: rotate(0deg)
+    }
+    ;
+}
+
+.smallbox {
+    position: absolute;
+    z-index: 17;
+    left: 50px;
+    top: 50px;
+    height: 35px;
+    width: 35px;
+    background-color: #fff4f4;
+    border-radius: 360px;
+}
+
+#muteButton {
+    background-image: url(icon/icons8-voice-filled-15.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    margin-top: 67px;
+    margin-left: 15px;
+}
+
+.button {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 17;
+    top: 65px;
+    left: 150px;
+}
+
+#playButton {
+    background-image: url(icon/icons8-play-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+#playButton:active {
+    position: relative;
+    top: 2px;
+}
+
+
+/* #playButton:hover {
+    background-color: #CCC;
+} */
+
+.navbar {
+    background-color: #fff;
+    z-index: 10 !important;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.cardo {
+    margin: 0%;
+}

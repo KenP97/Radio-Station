@@ -8,6 +8,34 @@ var playstr = document.getElementById('playlist');
 playButton.addEventListener('click', playOrPause, false);
 muteButton.addEventListener('click', muteOrUnmute, false);
 
+var all = $("#allButton");
+var pop = $("#popButton");
+var rock = $('#rockButton');
+
+$('.Play').on('click',function(e){
+    $('.intro').addClass('hidden')
+    $('.select').removeClass('hidden')
+    $('.genre-button').removeClass('hidden')
+})
+
+all.on('click',function(e){
+    $('.select').addClass('hidden')
+    $('.all').removeClass('hidden')
+})
+
+pop.on('click', function(e){
+    $('.select').addClass('hidden')
+    $('.all').not('.pop').addClass('hidden');
+    $('.pop').removeClass('hidden')
+})
+
+rock.on('click', function(e){
+    $('.select').addClass('hidden')
+    $('.all').not('.rock').addClass('hidden')
+    $('.rock').removeClass('hidden')
+})
+
+
 function c1() {
     mytrack.pause();
     mytrack.setAttribute('src', 'http://113fm-edge1.cdnstream.com/1728_128');

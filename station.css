@@ -3,6 +3,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.main-title {
+    font-size: 4rem;
+}
+
+.genres {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
 .roundbox {
     position: absolute;
     z-index: 15;
@@ -114,7 +123,25 @@ body {
     transform: translateY(-4px);
 }
 .cardo img:active {
-    box-shadow: 4px 4px #ccc;
+    box-shadow: 4px 4px 1px 2px #ccc;
     transform: translateY(4px);
-  }
+}
 
+.hidden {
+    display:none;
+}
+
+
+
+
+.intro, .select2 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    transform: translate(-50%,-50%);
+}
+
+.Play {
+    margin-top: 1rem;
+}

@@ -1,3 +1,8 @@
+body {
+    background-color: #ffe0e0;
+    font-family: 'Raleway', sans-serif;
+}
+
 .roundbox {
     position: absolute;
     z-index: 15;

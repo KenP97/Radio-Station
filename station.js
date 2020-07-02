@@ -110,12 +110,12 @@ function muteOrUnmute() {
     if (mytrack.muted == true) {
         mytrack.muted = false;
 
-        muteButton.style.backgroundImage = 'url(icon/icons8-voice-filled-15.png)';
+        muteButton.style.backgroundImage = 'url(icon/icons8-voice-15.png)';
         muteButton.style.backgroundColor = '#FFF';
     } else {
         mytrack.muted = true;
 
-        muteButton.style.backgroundImage = 'url(icon/icons8-mute-filled-15.png)';
+        muteButton.style.backgroundImage = 'url(icon/icons8-mute-15.png)';
         muteButton.style.backgroundColor = '#fff4f4';
     }
 }

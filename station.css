@@ -105,7 +105,7 @@ body {
 
 .cardo {
     margin: 0%;
-    
+    padding-bottom: 2%;
     display: inline-block;
 }
 .cardo img:hover {

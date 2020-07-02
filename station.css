@@ -98,4 +98,16 @@
 
 .cardo {
     margin: 0%;
+    
+    display: inline-block;
 }
+.cardo img:hover {
+    /* opacity: 0.5; */
+    box-shadow:3px 3px 5px 6px #ccc; 
+    transform: translateY(-4px);
+}
+.cardo img:active {
+    box-shadow: 4px 4px #ccc;
+    transform: translateY(4px);
+  }
+

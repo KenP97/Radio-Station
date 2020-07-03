@@ -1,5 +1,8 @@
 body {
     background-color: #ffe0e0;
+    background-image: url('icon/radio.svg'), url('icon/radio.svg');    
+    background-repeat: repeat-y;
+    background-position: right, left;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -7,6 +10,9 @@ body {
     font-size: 4rem;
 }
 
+.title-name {
+    cursor: pointer;
+}
 
 .genres {
     text-align: center;
@@ -79,6 +85,16 @@ body {
     left: 150px;
 }
 
+.button2 {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 17;
+    top: 65px;
+    left: 220px;
+}
+
 #playButton {
     background-image: url(icon/icons8-play-50.png);
     background-repeat: no-repeat;
@@ -92,6 +108,23 @@ body {
 }
 
 #playButton:active {
+    position: relative;
+    top: 2px;
+}
+
+#shuffleButton {
+    background-image: url(icon/icons8-shuffle-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+#shuffleButton:active {
     position: relative;
     top: 2px;
 }

@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    
+    <meta charset="utf-8">    
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
@@ -20,7 +19,7 @@
 
     <nav class="navbar top">
         <span class="spacer"></span>
-        <object class="navbar-brand title-name" href="#"><h1>All<span style="color: red;">Radio</span> </h1></object>
+        <object class="navbar-brand title-name" href="#"><h1>All<span class="text-danger">Radio</span> </h1></object>
         <span class="spacer"></span>
         
     </nav>
@@ -31,17 +30,18 @@
     <div class="container">
         <div class="intro-parent">
             <div class="intro">
-            <h1 class='main-title'>Welcome to AllRadio!</h1>
-            <button class="Play btn btn-outline-danger btn-lg">Click to explore</button>
+            <h1 class='main-title'>Welcome to All<span class="text-danger">Radio</span>! </h1>
+            <button class="Play btn btn-outline-danger btn-lg shadow-none">Click to explore</button>
         </div></div>
         
         <div class='row'>
             <div class='col-md-12 text-center'>
                 <div class='genres btn-group' role='group' aria-label='genre buttons'>
+                    <button id="allButton" class='hidden genre-button btn btn-outline-danger shadow-none'>All</button>
                     <button id="newsButton" class='hidden genre-button btn btn-outline-danger shadow-none'> News</a>
                     <button id="sportsButton" class='hidden genre-button btn btn-outline-danger shadow-none'>Sports</button>
                     <button id="musicButton" class='hidden genre-button btn btn-outline-danger shadow-none'>Music</button>
-                    <button id="allButton" class='hidden genre-button btn btn-outline-danger shadow-none'>All</button>
+                    
         </div></div></div>
         
         <div class='select2'>
@@ -62,8 +62,7 @@
             </div>
             <div id="cb4" class="col-lg-3 col-md-4 col-xs-6 cardo all sports hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/motorsport.jpg" onclick="c4();">
-            </div>        
-
+            </div>      
             <div id="cb5" class="col-lg-3 col-md-4 col-xs-6 cardo all news hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/newstalk.jpg" onclick="c5();">
             </div>
@@ -99,7 +98,9 @@
                 <div class="button">
                     <button type="button" id="playButton"></button>
                 </div>             
-                
+                <div class="button2">
+                    <button type="button" id="shuffleButton"></button>
+                </div>    
 
             </div>
           
@@ -107,7 +108,7 @@
         </div>
         <span class="spacer"></span>
         <div style="display: inset-block;">
-            <h2 style="display: inline;">Now <span style="color: red;">playing</span>: </h2>
+            <h2 style="display: inline;">Now <span class="text-danger">playing</span>: </h2>
             <h2 style="display: inline;" id="playlist">113.FM Coffee House</h2>
         </div>
 

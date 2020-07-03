@@ -8,6 +8,8 @@ var playstr = document.getElementById('playlist');
 playButton.addEventListener('click', playOrPause, false);
 muteButton.addEventListener('click', muteOrUnmute, false);
 
+var played = []
+
 var all = $("#allButton");
 var sports = $("#sportsButton");
 var news = $('#newsButton');
@@ -17,6 +19,13 @@ $('.Play').on('click',function(e){
     $('.intro').addClass('hidden')
     $('.select').removeClass('hidden')
     $('.genre-button').removeClass('hidden')
+})
+
+$('.title-name').on('click', function(e){
+    $('.intro').removeClass('hidden')
+    $('.select').addClass('hidden')
+    $('.genre-button').addClass('hidden')
+    $('.all').addClass('hidden')
 })
 
 all.on('click',function(e){
@@ -48,6 +57,25 @@ music.on('click', function(e){
     $('.music').removeClass('hidden')
     music.addClass('active')
     $('button').not(music).removeClass('active')
+})
+
+$('#shuffleButton').on('click', function(e){
+    var which = Math.floor(Math.random()*8);
+    if (played[-1] === which){
+        var which = Math.floor(Math.random()*8);
+        if (played[-1] === which){
+            var which = Math.floor(Math.random()*8);
+            window['c'+which]()
+            played.push(which)
+        } else {
+            window['c'+which]()
+            played.push(which)
+        }       
+    } else {
+        window['c'+which]()
+        played.push(which)
+    }    
+    
 })
 
 

@@ -73,6 +73,7 @@ body {
     background-color: #fff;
     margin-top: 67px;
     margin-left: 15px;
+    outline: none;
 }
 
 .button {
@@ -83,7 +84,12 @@ body {
     z-index: 17;
     top: 65px;
     left: 150px;
+        
 }
+
+
+
+
 
 .button2 {
     height: 70px;
@@ -93,6 +99,7 @@ body {
     z-index: 17;
     top: 65px;
     left: 220px;
+    
 }
 
 #playButton {
@@ -105,6 +112,7 @@ body {
     cursor: pointer;
     border: none;
     background-color: #fff;
+    outline: none;
 }
 
 #playButton:active {
@@ -122,6 +130,7 @@ body {
     cursor: pointer;
     border: none;
     background-color: #fff;
+    outline: none;
 }
 
 #shuffleButton:active {

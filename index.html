@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AllRadio</title>
+    
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="station.css">
-
+    <title>AllRadio</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
     <nav class="navbar top">
         <span class="spacer"></span>
-        <object class="navbar-brand title-name" href="#"><h2>All<span style="color: red;">Radio</span> </h2></object>
+        <object class="navbar-brand title-name" href="#"><h1>All<span style="color: red;">Radio</span> </h1></object>
         <span class="spacer"></span>
         
     </nav>
@@ -38,41 +38,42 @@
         <div class='row'>
             <div class='col-md-12 text-center'>
                 <div class='genres btn-group' role='group' aria-label='genre buttons'>
-                    <button id="popButton" class='hidden genre-button btn btn-danger'>Pop</a>
-                    <button id="rockButton" class='hidden genre-button btn btn-danger'>Rock</button>
-                    <button id="allButton" class='hidden genre-button btn btn-danger'>All</button>
+                    <button id="newsButton" class='hidden genre-button btn btn-outline-danger shadow-none'> News</a>
+                    <button id="sportsButton" class='hidden genre-button btn btn-outline-danger shadow-none'>Sports</button>
+                    <button id="musicButton" class='hidden genre-button btn btn-outline-danger shadow-none'>Music</button>
+                    <button id="allButton" class='hidden genre-button btn btn-outline-danger shadow-none'>All</button>
         </div></div></div>
         
         <div class='select2'>
-            <h3 class='select hidden'>Select a genre to listen to those radio stations!</h3>
+            <h3 class='select hidden'>Select a category to listen to those radio stations!</h3>
         </div>
 
 
         <div class="row text-center text-lg-left">
 
-            <div class="col-lg-3 col-md-4 col-xs-6 cardo all hidden">
+            <div class="col-lg-3 col-md-4 col-xs-6 cardo all music hidden">
                 <img id="cb1" class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/chouse.jpg" onclick="c1();">
             </div>
-            <div id="cb2" class="col-lg-3 col-md-4 col-xs-6 cardo all hidden">
+            <div id="cb2" class="col-lg-3 col-md-4 col-xs-6 cardo sports all hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/espn1460.jpg" onclick="c2();">
             </div>
-            <div id="cb3" class="col-lg-3 col-md-4 col-xs-6 cardo all hidden" >
+            <div id="cb3" class="col-lg-3 col-md-4 col-xs-6 cardo music all hidden" >
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/groove.jpg" onclick="c3();">
             </div>
-            <div id="cb4" class="col-lg-3 col-md-4 col-xs-6 cardo all rock hidden">
+            <div id="cb4" class="col-lg-3 col-md-4 col-xs-6 cardo all sports hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/motorsport.jpg" onclick="c4();">
             </div>        
 
-            <div id="cb5" class="col-lg-3 col-md-4 col-xs-6 cardo all rock hidden">
+            <div id="cb5" class="col-lg-3 col-md-4 col-xs-6 cardo all news hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/newstalk.jpg" onclick="c5();">
             </div>
-            <div id="cb6" class="col-lg-3 col-md-4 col-xs-6 cardo all pop hidden">
+            <div id="cb6" class="col-lg-3 col-md-4 col-xs-6 cardo all news hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/bbc.jpg" onclick="c6();">
             </div>
-            <div id="cb7" class="col-lg-3 col-md-4 col-xs-6 cardo all hidden">
+            <div id="cb7" class="col-lg-3 col-md-4 col-xs-6 cardo all news hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/brad.jpg" onclick="c7();">
             </div>
-            <div id="cb8" class="col-lg-3 col-md-4 col-xs-6 cardo all pop hidden">
+            <div id="cb8" class="col-lg-3 col-md-4 col-xs-6 cardo all music hidden">
                 <img class="img-fluid img-thumbnail" style="width: 300px;height: 250px;" src="channel_images/hitusa.jpg" onclick="c8();">
             </div>
 
@@ -106,8 +107,8 @@
         </div>
         <span class="spacer"></span>
         <div style="display: inset-block;">
-            <h1 style="display: inline;">Now <span style="color: red;">playing</span>: </h1>
-            <h1 style="display: inline;" id="playlist">113.FM Coffee House</h1>
+            <h2 style="display: inline;">Now <span style="color: red;">playing</span>: </h2>
+            <h2 style="display: inline;" id="playlist">113.FM Coffee House</h2>
         </div>
 
     </nav>

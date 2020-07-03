@@ -9,8 +9,9 @@ playButton.addEventListener('click', playOrPause, false);
 muteButton.addEventListener('click', muteOrUnmute, false);
 
 var all = $("#allButton");
-var pop = $("#popButton");
-var rock = $('#rockButton');
+var sports = $("#sportsButton");
+var news = $('#newsButton');
+var music = $('#musicButton');
 
 $('.Play').on('click',function(e){
     $('.intro').addClass('hidden')
@@ -21,18 +22,32 @@ $('.Play').on('click',function(e){
 all.on('click',function(e){
     $('.select').addClass('hidden')
     $('.all').removeClass('hidden')
+    all.addClass('active')
+    $('button').not(all).removeClass('active')
 })
 
-pop.on('click', function(e){
+sports.on('click', function(e){
     $('.select').addClass('hidden')
-    $('.all').not('.pop').addClass('hidden');
-    $('.pop').removeClass('hidden')
+    $('.all').not('.sports').addClass('hidden');
+    $('.sports').removeClass('hidden')
+    sports.addClass('active')
+    $('button').not(sports).removeClass('active')
 })
 
-rock.on('click', function(e){
+news.on('click', function(e){
     $('.select').addClass('hidden')
-    $('.all').not('.rock').addClass('hidden')
-    $('.rock').removeClass('hidden')
+    $('.all').not('.news').addClass('hidden')
+    $('.news').removeClass('hidden')
+    news.addClass('active')
+    $('button').not(news).removeClass('active')
+})
+
+music.on('click', function(e){
+    $('.select').addClass('hidden')
+    $('.all').not('.music').addClass('hidden')
+    $('.music').removeClass('hidden')
+    music.addClass('active')
+    $('button').not(music).removeClass('active')
 })
 
 

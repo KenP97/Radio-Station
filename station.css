@@ -189,3 +189,14 @@ body {
     margin-top: 1rem;
 }
 
+@media (min-width:1000px) {
+    .now-playing {
+        text-align: right;
+    }
+}
+
+@media (max-width:1200px) {
+    .now-pl-text {
+        padding-top: 2rem;
+    }
+}
